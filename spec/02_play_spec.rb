@@ -121,7 +121,7 @@ describe './lib/tic_tac_toe.rb' do
         game.instance_variable_set(:@board, board)
         allow($stdout).to receive(:puts)
 
-        expect($stdout).to receive(:puts).with("Cats Game!")
+        expect($stdout).to receive(:puts).with("Cat's Game!")
 
         game.play
       end
