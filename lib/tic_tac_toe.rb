@@ -37,9 +37,9 @@ class TicTacToe
       move(position, current_player)
     else
       turn
-      puts "Please choose a square (1-9):"
+      
     end
-    display_board
+      display_board
   end
 
   def turn_count
