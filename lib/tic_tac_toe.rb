@@ -37,6 +37,7 @@ class TicTacToe
       move(position, current_player)
     else
       turn
+      puts "Please choose a square (1-9):"
     end
     display_board
   end
