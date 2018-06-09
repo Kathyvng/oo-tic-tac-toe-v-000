@@ -18,9 +18,6 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
-  def input_to_index(user_input)
-     user_input.to_i - 1
-  end
   def move(position, current_player = "X")
     @board[position.to_i - 1] = current_player
   end
@@ -31,15 +28,13 @@ class TicTacToe
 
   def valid_move?(position)
     position.to_i.between?(1,9) && !position_taken?(position.to_i - 1)
-    return true
   end
 
   def turn
     puts "Please choose a square (1-9):"
-    user_input = gets.chomp
+    position = gets.chomp
     if valid_move?(position)
-      token = current_player
-      move(position, token)
+      move(position, current_player)
     else
       turn
     end
