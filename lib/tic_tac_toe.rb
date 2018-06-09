@@ -69,7 +69,7 @@ class TicTacToe
 				false
 			end
 		end
-	end 
+	end
 
 	def full?
 		@board.each_index do |position|
@@ -81,7 +81,7 @@ class TicTacToe
 				true
 			end
 		end
-	end 
+	end
 
 	def draw?
 		if full?
@@ -124,6 +124,6 @@ class TicTacToe
 		elsif draw?
 			puts "Cat's Game!"
 		end
-		
+
 	end
 end
